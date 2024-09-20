@@ -1,0 +1,266 @@
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: #ccc;
+  }
+  
+
+h1{text-align: center;
+color: blue;
+font-size: 80px;}
+h2{text-align: center; font-size: 45px;}
+h3{text-align: center; color: red;}
+h4{font-size: xx-large; text-align: center;}
+h5{font-size: x-large;}
+
+#mbt{display: flex; gap: 2%;margin-left: 1%;
+align-items: center;}
+
+.mbt {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.mbt.active {
+    opacity: 1;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(8, 12, 230, 0.5);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.sheets{
+    margin-top: 5%;
+    display: flex;
+    gap: 40%;
+    margin-left: 5%;
+}
+
+.BEST{
+    font-size: 30px;
+    margin-top: 62%;
+}
+figcaption{
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+}
+
+#about{
+    display: flex;
+    gap: 5%;
+    padding-left: 10%;
+}
+.Vision{
+    background-color: rgb(72, 72, 162);
+    color: white;
+    border-radius: 15px;
+    width: 450px;
+    height: 350px;
+    padding: 3%;
+}
+.Mission{
+    background-color: rgb(72, 72, 162);
+    color: white;
+    border-radius: 15px;
+    justify-content: space-around;
+    width: 450px;
+    height: 350px;
+    padding: 3%;
+}
+#contact{
+    background-color: antiquewhite;
+    color: black;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    padding: 3%;
+    justify-content: space-evenly;
+}
+.msoh{
+    border-radius: 50%;
+}
+.icons{
+    display: grid;
+    grid-template-columns: 1 1fr;
+    gap: 3%;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar li {
+        margin-right: 5px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: large;
+    }
+
+    #mbt {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images */
+    }
+
+    .mbt {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #prevBtn, #nextBtn {
+        padding: 8px 15px; /* Adjust button size */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .sheets {
+        flex-direction: column; /* Stack sheets vertically */
+        margin-left: 0; /* Remove left margin */
+        gap: 20%; /* Reduce gap between items */
+    }
+
+    .Vision, .Mission {
+        width: 90%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add space between sections */
+    }
+
+    #contact {
+        flex-direction: column; /* Stack contact items vertically */
+        padding: 5%; /* Increase padding for better spacing */
+    }
+
+    .icons {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for icons */
+        gap: 5%; /* Reduce gap between icons */
+    }
+    .BEST{
+        font-size: 20px;
+        margin-top: 82%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar li {
+        margin-right: 5px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: large;
+    }
+
+    #mbt {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images */
+    }
+
+    .mbt {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #prevBtn, #nextBtn {
+        padding: 8px 15px; /* Adjust button size */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .sheets {
+        flex-direction: column; /* Stack sheets vertically */
+        margin-left: 0; /* Remove left margin */
+        gap: 20%; /* Reduce gap between items */
+    }
+
+    .Vision, .Mission {
+        width: 90%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add space between sections */
+    }
+
+    #contact {
+        flex-direction: column; /* Stack contact items vertically */
+        padding: 5%; /* Increase padding for better spacing */
+    }
+
+    .icons {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for icons */
+        gap: 5%; /* Reduce gap between icons */
+    }
+    .BEST{
+        font-size: 20px;
+        margin-top: 82%;
+    }
+}
+
